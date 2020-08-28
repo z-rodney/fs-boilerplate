@@ -2,13 +2,13 @@
 	"name": "template",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "server/index.js",
 	"scripts": {
 		"test": "mocha \"**/*.spec.js\"",
 		"build": "webpack",
 		"build:dev": "webpack -w",
 		"start": "node server/index.js",
-		"start:dev": "npm run build && nodemon server/index.js"
+		"start:dev": "npm run build && nodemon --ignore client --ignore server/public"
 	},
 	"author": "",
 	"license": "ISC",
